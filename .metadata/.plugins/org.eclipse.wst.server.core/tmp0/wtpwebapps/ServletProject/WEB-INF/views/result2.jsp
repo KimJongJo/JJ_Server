@@ -8,27 +8,33 @@
 </head>
 <body>
 
+
+
+	
 	<h3>주문자 : <%= request.getParameter("orderer") %> </h3>
-	
-	<h3> 주문한 커피 : 
-	
-		<% if(request.getParameter("type").equals("ice")) { %>
-			차가운
-		<% } else { %>
-			따뜻한
-		<% }  %>
 		
-		<%= request.getParameter("coffee") %> 
-	</h3>
+		<h3> 주문한 커피 : 
+		
+			<% if(request.getParameter("type").equals("ice")) { %>
+				차가운
+			<% } else { %>
+				따뜻한
+			<% }  %>
+			
+			<%= request.getParameter("coffee") %> 
+		</h3>
+		
+		<% if(request.getParameterValues("opt") != null) {%>
+			<ul>
+				<% for(String s : request.getParameterValues("opt")) { %>
+					<li> <%= s %> </li>
+				<% } %>
+			</ul>
+		<% } else { %>
+			<li>옵션없음</li>
+		<% } %>
 	
-	<% if(request.getParameterValues("opt") != null) {%>
-		<ul>
-			<% for(String s : request.getParameterValues("opt")) { %>
-				<li> <%= s %> </li>
-			<% } %>
-		</ul>
-	<% } else { %>
-	<% } %>
+
 
 </body>
 </html>

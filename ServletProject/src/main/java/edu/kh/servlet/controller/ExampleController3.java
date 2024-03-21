@@ -27,12 +27,16 @@ public class ExampleController3 extends HttpServlet{
 		System.out.println(orderer);
 		System.out.println(coffee);
 		System.out.println(type);
-		System.out.println(optionArr); // 주소값
 		
-		for(String s : optionArr) {
-			System.out.println(s);
+		if(optionArr == null) {
+			System.out.println("옵션 없음");
+		}else {
+			for(String s : optionArr) {
+				System.out.println(s);
+			}
 		}
 		
+
 		
 		RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB-INF/views/result2.jsp");
 		

@@ -37,7 +37,7 @@ public class ExampleController1 extends HttpServlet{
 		// -> 요청 시 전달된 데이터 중
 		//    name 속성값이 일치하는 데이터의 value 를 얻어와
 		//    String 형태로 반환
-	
+		
 		// HTML 에서 얻어오는 모든 값은 String
 		String name = req.getParameter("inputName");
 		String age = req.getParameter("inputAge");
