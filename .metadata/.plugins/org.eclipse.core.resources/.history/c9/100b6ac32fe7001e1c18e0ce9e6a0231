@@ -1,0 +1,6 @@
+package edu.kh.servlet.controller;
+
+// Controller
+public class ExampleController1 {
+
+}
