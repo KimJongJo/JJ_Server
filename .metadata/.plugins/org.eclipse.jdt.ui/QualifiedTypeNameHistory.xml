@@ -2,6 +2,7 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="edu.kh.jsp.model.dto.Pizza"/>
+<<<<<<< HEAD
     <fullyQualifiedTypeName name="jakarta.servlet.http.HttpSession"/>
     <fullyQualifiedTypeName name="jakarta.servlet.ServletContext"/>
     <fullyQualifiedTypeName name="jakarta.servlet.RequestDispatcher"/>
@@ -10,4 +11,14 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="edh.kh.jsp.model.dto.Book"/>
+=======
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="edh.kh.jsp.model.dto.Book"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServlet"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.annotation.WebServlet"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.ServletContext"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.RequestDispatcher"/>
+>>>>>>> c1e7409008f21a12ce278c7e145f5f1e4003a3c2
 </qualifiedTypeNameHistroy>
