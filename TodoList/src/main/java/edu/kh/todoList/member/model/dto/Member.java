@@ -6,8 +6,9 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@NoArgsConstructor // 기본생성자
-@AllArgsConstructor // 모든 필드에 대한 매개변수 생성자
+
+@AllArgsConstructor // 모든필드에 대한 매개변수 생성자
+@NoArgsConstructor // 기본 생성자
 @Setter
 @Getter
 @ToString
