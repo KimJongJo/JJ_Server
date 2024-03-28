@@ -28,7 +28,7 @@
 			        <div id="under">
 			            <form action="/login" id="form" method="post">
 			                <div id="inner">
-			                    <input type="text" class="btn" name="inputId">
+			                    <input type="text" class="btn" name="inputId"  autocomplete="off">
 			                    <input type="password" class="btn" name="inputPw">
 			                </div>
 			                <!-- 로그인 버튼 -->
@@ -46,17 +46,19 @@
 			
 			<%-- 로그인 했을때 로그인 한 계정의 재생목록 + 노래차트 출력 --%>
 			<c:otherwise>
-				<h1>${member.memberNickname}의 플레이리스트</h1>
-				<a href="logout">로그아웃</a>
-				<a href="plus">노래 추가하기</a>
+				<h1 id="list-title">${member.memberNickname}의 플레이리스트</h1>
+	            <div id="second">
+	                <a href="logout" id="logout-btn">로그아웃</a>
+	                <a href="plus" id="plus-btn">노래 추가하기</a>
+	            </div>
 				
 				<c:choose>
 					<c:when test="${empty sessionScope.playList}">
-						<h2>플레이리스트가 비어있습니다</h2>
+						<h2 id="list-none">플레이리스트가 비어있습니다</h2>
 						
 					</c:when>
 					<c:otherwise>
-						<table>
+						<table id="table">
 							<tr>
 								<th>제목</th>
 								<th>가수</th>

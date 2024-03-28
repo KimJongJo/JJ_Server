@@ -46,6 +46,8 @@
                     
                 </div>
                 <!-- 회원가입 버튼 -->
+
+                <a href="/" id="back-btn"><i class="fa-solid fa-arrow-left"></i></a>
                 <button id="signup-btn">가입하기</button>
             </form>
 
@@ -56,4 +58,4 @@
     <script src="/resources/js/signup.js"></script>
 
 </body>
-</html>
+</html> 
