@@ -50,7 +50,7 @@
 	            <div id="second">
 	                <a href="logout" id="logout-btn">로그아웃</a>
 	                <a href="plus" id="plus-btn">노래 추가하기</a>
-	            </div>
+	            </div>	        
 				
 				<c:choose>
 					<c:when test="${empty sessionScope.playList}">
@@ -83,6 +83,20 @@
 		
 		
 	</main>
+	
+	
+    <div>
+        <div id="function">
+            <p>C : 회원가입</p>
+            <p>R : 제목, 가수이름으로 노래 조회</p>
+            <p>U : 운영자 계정으로 노래 수정</p>
+            <p>D : 플레이 리스트에서 제거</p>
+        </div>
+        
+
+        <h3>운영자 계정 아이디, 비밀번호 : 0000</h3>
+        <p>운영자만 노래 정보에 대한 수정이 가능함</p>
+    </div>   
 
     
     

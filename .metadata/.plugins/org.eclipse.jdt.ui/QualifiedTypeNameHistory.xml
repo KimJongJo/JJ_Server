@@ -12,20 +12,20 @@
     <fullyQualifiedTypeName name="lombok.Setter"/>
     <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
     <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
-    <fullyQualifiedTypeName name="java.sql.Connection"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="edu.kh.musicChart.common.JDBCTemplate"/>
     <fullyQualifiedTypeName name="java.sql.Statement"/>
     <fullyQualifiedTypeName name="edu.kh.musicChart.member.service.MemberService"/>
     <fullyQualifiedTypeName name="org.apache.tomcat.util.net.ServletConnectionImpl"/>
-    <fullyQualifiedTypeName name="edu.kh.musicChart.member.model.dto.Member"/>
     <fullyQualifiedTypeName name="org.eclipse.jdt.internal.compiler.AbstractAnnotationProcessorManager"/>
     <fullyQualifiedTypeName name="edu.kh.musicChart.playList.model.dto.PlayList"/>
+    <fullyQualifiedTypeName name="edu.kh.musicChart.playList.service.PlayListService"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="edu.kh.musicChart.member.model.dto.Member"/>
+    <fullyQualifiedTypeName name="edu.kh.musicChart.music.service.MusicService"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="edu.kh.musicChart.music.model.dto.MusicChart"/>
     <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServlet"/>
     <fullyQualifiedTypeName name="jakarta.servlet.annotation.WebServlet"/>
-    <fullyQualifiedTypeName name="edu.kh.musicChart.playList.service.PlayListService"/>
-    <fullyQualifiedTypeName name="edu.kh.musicChart.music.model.dto.MusicChart"/>
     <fullyQualifiedTypeName name="jakarta.servlet.http.HttpSession"/>
-    <fullyQualifiedTypeName name="edu.kh.musicChart.music.service.MusicService"/>
 </qualifiedTypeNameHistroy>

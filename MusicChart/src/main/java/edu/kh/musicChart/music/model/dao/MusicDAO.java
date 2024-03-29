@@ -121,5 +121,176 @@ public class MusicDAO {
 		
 		return musicChart;
 	}
+
+	/** 해당 가수의 노래 리스트
+	 * @param conn
+	 * @param songSinger
+	 * @return musicList
+	 */
+	public List<MusicChart> sameSingerSongs(Connection conn, String songSinger) throws Exception{
+		
+		List<MusicChart> musicList = new ArrayList<MusicChart>();
+		MusicChart musicChart = null;
+		
+		try {
+			
+			String sql = prop.getProperty("sameSingerSongs");
+			
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, songSinger);
+			
+			rs = pstmt.executeQuery();
+			
+			while(rs.next()) {
+				
+				musicChart = new MusicChart(rs.getInt(1),
+									rs.getString(2),
+									songSinger,
+									rs.getString(3),
+									rs.getInt(4),
+									rs.getString(5));
+				
+				musicList.add(musicChart);
+				
+				
+			}
+			
+		}finally {
+			
+			close(rs);
+			close(pstmt);
+		}
+		
+		
+		return musicList;
+	}
+
+
+
+	/** 노래 수정
+	 * @param conn
+	 * @param title
+	 * @param singer
+	 * @param like
+	 * @param songNo
+	 * @return result
+	 */
+	public int update(Connection conn, String title, String singer, int like, int songNo) throws Exception{
+		
+		int result = 0;
+		
+		try {
+			
+			String sql = prop.getProperty("update");
+			
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, title);
+			pstmt.setString(2, singer);
+			pstmt.setInt(3, like);
+			pstmt.setInt(4, songNo);
+			
+			result = pstmt.executeUpdate();
+			
+			
+		}finally {
+			
+			close(pstmt);
+			
+		}
+		
+		return result;
+	}
+
+	/** 제목으로 노래 찾기
+	 * @param conn
+	 * @param title
+	 * @return musicList
+	 */
+	public List<MusicChart> selectTitle(Connection conn, String title) throws Exception{
+		
+		List<MusicChart> musicList = new ArrayList<MusicChart>();
+		
+		MusicChart music = null;
+		
+		try {
+			
+			String sql = prop.getProperty("selectTitle");
+			
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, title);
+			
+			rs = pstmt.executeQuery();
+			
+			while(rs.next()) {
+				
+				
+				music = new MusicChart(rs.getInt(1),
+						rs.getString(2),
+						rs.getString(3),
+						rs.getString(4),
+						rs.getInt(5),
+						rs.getString(6));
+				
+				musicList.add(music);
+				
+			}
+			
+		}finally {
+			
+			close(rs);
+			close(pstmt);
+			
+		}
+		
+		
+		
+		return musicList;
+	}
+
+	/** 가수로 노래찾기
+	 * @param conn
+	 * @param singer
+	 * @return musicList
+	 */
+	public List<MusicChart> selectSinger(Connection conn, String singer) throws Exception{
+		
+		List<MusicChart> musicList = new ArrayList<MusicChart>();
+		
+		MusicChart music = null;
+		
+		try {
+			
+			String sql = prop.getProperty("selectSinger");
+			
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, singer);
+			
+			rs = pstmt.executeQuery();
+			
+			while(rs.next()) {
+				
+				
+				music = new MusicChart(rs.getInt(1),
+						rs.getString(2),
+						rs.getString(3),
+						rs.getString(4),
+						rs.getInt(5),
+						rs.getString(6));
+				
+				musicList.add(music);
+				
+			}
+			
+		}finally {
+			
+			close(rs);
+			close(pstmt);
+			
+		}
+		
+		
+		
+		return musicList;
+	}
 	
 }

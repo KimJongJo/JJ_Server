@@ -23,10 +23,5 @@ public class LogoutController extends HttpServlet{
 		// 메인페이지 재요청
 		resp.sendRedirect("/");
 			
-			
-			
-		
-		
-		
 	}
 }

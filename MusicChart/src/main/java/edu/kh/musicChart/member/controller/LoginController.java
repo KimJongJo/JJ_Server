@@ -36,15 +36,8 @@ public class LoginController extends HttpServlet{
 			// 로그인 성공
 			if(member != null) {
 				
+				// 로그인 한 계정 session 객체에 저장
 				session.setAttribute("member", member);
-				
-				// 저장된 플레이리스트 session 객체에 저장
-				PlayListService listService = new PlayListService();
-				
-				List<PlayList> playList = listService.selectAll(member.getMemberNo());
-				
-				session.setAttribute("playList", playList);
-				
 				
 				// 노래 리스트 session 객체에 생성
 				MusicService musicService = new MusicService();
@@ -53,8 +46,26 @@ public class LoginController extends HttpServlet{
 				
 				session.setAttribute("musicChart", musicChart);
 				
+				// 로그인 한 계정이 운영자 계정이면
+				if(member.getMemberId().equals("0000")) {
+					
+					resp.sendRedirect("/plus");
+					
+					
+				}else {// 로그인 한 계정이 일반 사용자 계정이라면
+					
+					
+					// 저장된 플레이리스트 session 객체에 저장
+					PlayListService listService = new PlayListService();
+					
+					List<PlayList> playList = listService.selectAll(member.getMemberNo());
+					
+					session.setAttribute("playList", playList);
+					
+					resp.sendRedirect("/");
+				}
 				
-				resp.sendRedirect("/");
+				
 				
 			}else { // 로그인 실패
 				session.setAttribute("message", "아이디 또는 비밀번호가 일치하지 않습니다.");

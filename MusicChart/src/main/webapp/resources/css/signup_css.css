@@ -17,10 +17,6 @@
     margin: 0;
 }
 
-div{
-    /* border: 1px solid black; */
-}
-
 body{
 
 
@@ -155,3 +151,30 @@ body{
     
     transition-duration: 0.5s;
 }
+
+.pass-not-same{
+	color : red;
+}
+.pass-same{
+	color : green;
+}
+
+
+#pwMessage{
+
+	
+
+	width: 70px;
+
+	text-decoration: center;
+	padding-left: 20px;
+
+	position: relative;
+	margin-top: 125px;
+
+	opacity: 0;
+
+}
+
+
+
