@@ -22,8 +22,7 @@ public class JDBCTemplate {
 
 				Properties prop = new Properties();
 				
-				String filePath
-					= JDBCTemplate.class.getResource("/edu/kh/musicChart/sql/driver.xml").getPath();
+				String filePath	= JDBCTemplate.class.getResource("/edu/kh/musicChart/sql/driver.xml").getPath();
 				
 			
 				prop.loadFromXML( new FileInputStream( filePath ) );

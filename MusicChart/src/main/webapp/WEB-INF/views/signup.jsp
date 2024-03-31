@@ -27,7 +27,7 @@
                         <table>
                             <tr>
                                 <th>아이디</th>
-                                <td><input type="text" class="btn" name="inputId" id="inputId" placeholder="4~13 한글,영어,숫자"></td>
+                                <td><input type="text" class="btn" name="inputId" id="inputId" placeholder="4~13 한글,영어,숫자" autocomplete="off"></td>
                             </tr>
                             <tr>
                                 <th>비밀번호</th>
@@ -39,7 +39,7 @@
                             </tr>
                             <tr>
                                 <th>이름(닉네임)</th>
-                                <td><input type="text" class="btn" name="inputName" id="inputName"  placeholder="3~11 한글,영어,숫자"></td>
+                                <td><input type="text" class="btn" name="inputName" id="inputName"  placeholder="3~11 한글,영어,숫자" autocomplete="off"></td>
                             </tr>
                         </table>
                     </div>
