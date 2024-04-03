@@ -1,10 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <temp-directories>
-  <temp-directory age="0" key="Music Board" path="tmp4" recycle="false"/>
-  <temp-directory age="0" key="JSP Project Server" path="tmp1" recycle="false"/>
-  <temp-directory age="0" key="Music Chart" path="tmp5" recycle="false"/>
-  <temp-directory age="0" key="Servlet Server" path="tmp0" recycle="false"/>
-  <temp-directory age="0" key="jsp2 server" path="tmp2" recycle="false"/>
-  <temp-directory age="0" key="homeServer" path="tmp1" recycle="false"/>
-  <temp-directory age="0" key="todoList server" path="tmp3" recycle="false"/>
+  <temp-directory age="0" key="test" path="tmp0" recycle="false"/>
 </temp-directories>
