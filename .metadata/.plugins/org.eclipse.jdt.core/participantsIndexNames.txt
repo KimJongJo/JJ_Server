@@ -3,6 +3,8 @@ C:\myworkspace\05_Server\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3
 \JSPProject2\src\main\java
 C:\myworkspace\05_Server\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\489103887.index
 \MusicChart\src\main\java
+C:\myworkspace\05_Server\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3833414817.index
+\testProject2\src\main\java
 C:\myworkspace\05_Server\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3977689548.index
 \JSPProject2\src\main\java
 C:\myworkspace\05_Server\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2210145245.index

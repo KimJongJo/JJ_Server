@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <publish-info>
+  <server id="testProject2 Server" path="publish4.dat"/>
+  <server id="jspProject 2 server" path="publish3.dat"/>
   <server id="test" path="publish0.dat"/>
+  <server id="servlet Server" path="publish2.dat"/>
+  <server id="musicChart Server" path="publish5.dat"/>
   <server id="test new Server" path="publish1.dat"/>
 </publish-info>
