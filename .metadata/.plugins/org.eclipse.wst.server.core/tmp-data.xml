@@ -6,4 +6,5 @@
   <temp-directory age="0" key="servlet Server" path="tmp2" recycle="false"/>
   <temp-directory age="0" key="musicChart Server" path="tmp5" recycle="false"/>
   <temp-directory age="0" key="test new Server" path="tmp1" recycle="false"/>
+  <temp-directory age="0" key="notebook server" path="tmp1" recycle="false"/>
 </temp-directories>

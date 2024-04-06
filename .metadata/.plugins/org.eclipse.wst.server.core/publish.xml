@@ -6,4 +6,5 @@
   <server id="servlet Server" path="publish2.dat"/>
   <server id="musicChart Server" path="publish5.dat"/>
   <server id="test new Server" path="publish1.dat"/>
+  <server id="notebook server" path="publish1.dat"/>
 </publish-info>

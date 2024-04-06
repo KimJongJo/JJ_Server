@@ -15,7 +15,10 @@
   <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/testProject2 Server-config" deployDir="wtpwebapps" hostname="localhost" id="testProject2 Server" name="testProject2 Server" runtime-id="Apache Tomcat v10.1" server-type="org.eclipse.jst.server.tomcat.101" server-type-id="org.eclipse.jst.server.tomcat.101" start-timeout="60" stop-timeout="15" testEnvironment="true" timestamp="1">
     <list key="modules" value0="testProject2::org.eclipse.jst.jee.server:testProject2::jst.web::6.0"/>
   </server>
-  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/musicChart Server-config" deployDir="wtpwebapps" hostname="localhost" id="musicChart Server" name="musicChart Server" runtime-id="Apache Tomcat v10.1" server-type="org.eclipse.jst.server.tomcat.101" server-type-id="org.eclipse.jst.server.tomcat.101" start-timeout="60" stop-timeout="15" testEnvironment="true" timestamp="1">
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/musicChart Server-config" deployDir="wtpwebapps" hostname="localhost" id="musicChart Server" name="musicChart Server" runtime-id="Apache Tomcat v10.1" server-type="org.eclipse.jst.server.tomcat.101" server-type-id="org.eclipse.jst.server.tomcat.101" start-timeout="60" stop-timeout="15" testEnvironment="true" timestamp="3">
     <list key="modules" value0="MusicChart::org.eclipse.jst.jee.server:MusicChart::jst.web::6.0"/>
+  </server>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/notebook server-config" deployDir="wtpwebapps" hostname="localhost" id="notebook server" name="notebook server" runtime-id="Apache Tomcat v10.1" server-type="org.eclipse.jst.server.tomcat.101" server-type-id="org.eclipse.jst.server.tomcat.101" start-timeout="60" stop-timeout="15" testEnvironment="true" timestamp="1">
+    <list key="modules" value0="JSPProject1::org.eclipse.jst.jee.server:JSPProject1::jst.web::6.0"/>
   </server>
 </servers>
